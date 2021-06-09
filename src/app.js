@@ -39,7 +39,19 @@ function formatDate(timestamp) {
     return `${day} ${hours}:${minutes}`;
 }
 
-let apiKey = "e859b8ee7803308493a72ee143bb3697";
-let city = "New York";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-axios.get(apiUrl).then(displayTemperature);
+function handleSubmit(event) {
+    event.preventDefault();
+    let cityInputElement = document.querySelector("#city-input");
+    search(cityInputElement.value);
+}
+
+search("New York");
+
+function search(city) {
+    let apiKey = "e859b8ee7803308493a72ee143bb3697";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(displayTemperature);
+}
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
