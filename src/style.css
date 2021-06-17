@@ -7,8 +7,8 @@ body {
 }
 .weather-app {
    padding: 20px;
-   border: 1px solid #dadde1;
-   border-radius: 5px;
+   border: 1px solid #dfe9fa;
+   border-radius: 35px;
 }
 .overview {
     margin-bottom: 20px;
@@ -45,11 +45,12 @@ li {
     list-style: none;
     margin: 0;
     padding: 0;
-    color: #878787;
+   text-shadow: -4px 4px #f092a0;
     font-size: 16px;
-    font-weight: 100;
+    font-weight: 400;
     line-height: 19px;
 }
+
 li::first-letter{
 text-transform: capitalize;
 }
