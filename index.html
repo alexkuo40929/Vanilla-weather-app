@@ -19,11 +19,11 @@
                 <form id="search-form" class="mb-4">
                     <div class="row">
                         <div class="col-9">
-                            <input type="search" placeholder="Search..." class="form-control" id="city-input"
+                            <input type="search" placeholder="Type your city..." class="form-control" id="city-input"
                                 autocomplete="off" />
                         </div>
                         <div class="col-3">
-                            <input type="submit" value="Search" class="btn btn-primary w-100" />
+                            <input type="submit" value="Search" class="btn btn-warning w-100" />
                         </div>
                     </div>
                 </form>
@@ -45,14 +45,16 @@
                         </div>
                     </div>
                     <div class="col-6">
-                        <ul>
-                            <li>
-                                Humidity: <span id="humidity"></span>%
-                            </li>
-                            <li>
-                                Wind: <span id="wind"></span> km/h
-                            </li>
-                        </ul>
+                        <div class="side-bar">
+                            <ul>
+                                <li>
+                                    Humidity: <span id="humidity" class="humidity"></span>%
+                                </li>
+                                <li>
+                                    Wind: <span id="wind" class="wind"></span> km/h
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="weather-forecast" id="forecast">

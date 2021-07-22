@@ -1,22 +1,38 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .weather-app-wrapper {
    max-width: 600px;
    margin: 30px auto;
 }
 .weather-app {
-   padding: 20px;
+   padding: 40px;
    border: 1px solid #dfe9fa;
    border-radius: 35px;
+   background-color: rgb(162, 238, 238);
 }
 .overview {
     margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #dfe9fa;
+   border-radius: 35px;
+   background-color: rgb(243, 192, 235);
+   text-align: center;
+}
+.weather-temperature {
+     padding: 20px;
+    border: 1px solid #dfe9fa;
+   border-radius: 35px;
+   background-color: rgb(248, 179, 179);
 }
 .weather-temperature img {
 margin-right: 10px;
 height: 64px;
 width: 64px;
+ padding: 5px;
+    border: 1px solid #dfe9fa;
+   border-radius: 35px;
+   background-color: rgb(192, 223, 241);
 }
 .weather-temperature strong {
     color: rgb(33, 33, 33);
@@ -30,12 +46,17 @@ font-size: 16px;
 top: -34px;
 }
 h1 {
-    color:#878787;
-    display: block;
+    color: black;
+    display:block;
     font-size: 24px;
     font-weight: 100;
     line-height: 28px;
     margin-bottom: 0;
+    text-align: center;
+     padding: 20px;
+    border: 1px solid #dfe9fa;
+   border-radius: 35px;
+   background-color: rgb(179, 243, 190);
 }
 ul {
     margin: 0;
@@ -45,7 +66,6 @@ li {
     list-style: none;
     margin: 0;
     padding: 0;
-   text-shadow: -4px 4px #f092a0;
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
@@ -67,6 +87,10 @@ cursor: default;
     margin: 20px;
     text-align: center;
     color: #000;
+     padding: 20px;
+    border: 1px solid #dfe9fa;
+   border-radius: 35px;
+   background-color: rgb(186, 187, 247);
 }
 
 .weather-forecast-date {
@@ -79,4 +103,13 @@ font-size: 13px;
 }
 .weather-forecast-temperature-min {
     opacity: 0.6;
+}
+.side-bar {
+     padding: 10px;
+    border: 1px solid #dfe9fa;
+   border-radius: 35px;
+   text-align: center;
+   font-size: 25px;
+   background-color: rgb(243, 248, 193);
+   display: block;
 }
